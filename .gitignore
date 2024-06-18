@@ -1,0 +1,11 @@
+Dockerfile
+Dockerfile_player
+docker-compose.yml
+.dockerignore
+read_input
+t.c
+.boxed
+.bash_history
+note.md
+t_cha/
+
