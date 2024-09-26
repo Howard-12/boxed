@@ -8,4 +8,5 @@ t.c
 .bash_history
 note.md
 t_cha/
+.cache/
 

@@ -19,7 +19,7 @@ services:
     ports:
       - "6000:22"
     volumes:
-      - "./:/root:rw"
+      - "./:/root:z"
     networks:
         - net
 
@@ -78,7 +78,6 @@ RUN apt-get update && \\
 apt-get install -y openssh-server build-essential netcat-traditional strace ltrace gcc gcc-multilib vim gdb python-is-python3 python3-pip python3-ropgadget make curl wget git && \\
 pip3 install pwntools capstone --break-system-packages
 
-RUN mkdir /var/run/sshd
 RUN echo "root:root" | chpasswd
 RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 
